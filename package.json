@@ -1,0 +1,27 @@
+{
+  "name": "a1qa-wdio-framework",
+  "type": "module",
+  "scripts": {
+    "chrome.cucumber": "wdio run ./configs/chrome.cucumber.conf.js",
+    "test:data:tables": "wdio run ./configs/chrome.cucumber.conf.js --spec test/features/dataTables.feature",
+    "test:alert:handling": "wdio run ./configs/chrome.cucumber.conf.js --spec test/features/alertHandling.feature",
+    "test:drag:and:drop": "wdio run ./configs/chrome.cucumber.conf.js --spec test/features/dragAndDrop.feature",
+    "allure:serve": "allure serve",
+    "test:fix:me": "wdio run ./configs/chrome.cucumber.conf.js --spec test/features/fixMe.feature"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/register": "^7.23.7",
+    "@wdio/allure-reporter": "^8.36.1",
+    "@wdio/cli": "^9.2.6",
+    "@wdio/cucumber-framework": "^9.3.1",
+    "@wdio/local-runner": "^9.2.6",
+    "@wdio/mocha-framework": "^8.35.0",
+    "@wdio/spec-reporter": "^8.32.4",
+    "allure-commandline": "^2.28.0",
+    "chai": "^5.1.2",
+    "fs-extra": "^11.2.0",
+    "winston": "^3.13.0"
+  }
+}
